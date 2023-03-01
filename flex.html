@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+        .container{
+            display: flex;
+            height : 500px;
+            border : 1px solid blue;
+             /* justify-content: center; /* vertically center 
+            align-items: center; /* horizontally center */ 
+            flex-wrap: wrap; /* its wrapped inside */
+        }
+        .item{
+            border:2px solid black;
+            background-color: yellow;
+            margin: 7px;
+            height:50px;
+            width:50px;
+            text-align: center;
+        }
+        #flex{
+            /* flex-grow : 1; */
+            /* align-self: center; */
+            order:2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">one</div>
+        <div class="item" id="flex">two</div>
+        <div class="item">three</div>
+        <div class="item">four</div>
+        <div class="item">five</div>
+    </div>
+    <div class="containe">
+        <div class="ite">one</div>
+        <div class="ite" id="fle">two</div>
+        <div class="ite">three</div>
+        <div class="ite">four</div>
+        <div class="ite">five</div>
+    </div>
+</body>
+</html>
